@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <title>Pendaftaran UKM</title>
+  </head>
+  <body>
+    <div style="background-color: white" class="container p-3 my-3 border">
+      <h1 class="text-center">FORM PENDAFTARAN UKM UHAMKA</h1>
+      <form id="form" method="post">
+        <div class="alert-secondary">
+          <strong>DATA DIRI</strong>
+        </div>
+        <div class="row">
+          <div class="col-sm-7">
+            <div class="form-group">
+              <label>Nama Lengkap :</label>
+              <input
+                type="text"
+                name="nama"
+                class="form-control"
+                placeholder="Masukkan Nama Lengkap"
+              />
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="form-group">
+              <label>Nomor Induk Mahasiswa (NIM) :</label>
+              <input
+                type="text"
+                name="nim"
+                class="form-control"
+                placeholder="Masukkan Nomor NIM"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label>Fakultas :</label>
+              <input
+                type="text"
+                name="fakultas"
+                class="form-control"
+                placeholder="Asal Fakultas"
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Tanggal Lahir:</label>
+              <input type="date" name="tanggal_lahir" class="form-control" />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Jenis Kelamin :</label>
+              <select class="form-control" name="jenis_kelamin">
+                <option>Pilih</option>
+                <option value="Pria">Laki-Laki</option>
+                <option value="Wanita">Perempuan</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label>UKM (Unit Kegiatan Mahasiswa) :</label>
+              <select class="form-control" name="ukm">
+                <option>pilih</option>
+                <option value="IMAPALA">Pecinta Alam (IMAPALA UHAMKA)</option>
+                <option value="CHOIR">Paduan Suara (UHAMKA CHOIR)</option>
+                <option value="METRONOM">Orkestra Musik (METRONOM)</option>
+                <option value="TEATER HIJRAH">Teater (Teater Hijrah)</option>
+                <option value="PRAMUKA">Pramuka</option>
+                <option value="HIZBUL WATHAN">
+                  Kepanduan Muhammadiyah (HIZBUL WATHAN UHAMKA)
+                </option>
+                <option value="FOTOGRAFI">FOTOGRAFI (I-FOTOGRAFI)</option>
+                <option value="TAPAK SUCI">Seni bela diri (Tapak Suci)</option>
+                <option value="IMM">IMM UHAMKA</option>
+                <!-- Add other options as needed -->
+              </select>
+            </div>
+          </div>
+          <!-- <div class="col-sm-4">
+            <div class="form-group">
+              <label>Kewarganegaraan :</label>
+              <br />
+              <input type="radio" name="kewarganegaraan" value="Laki-Laki" />
+              Laki-Laki
+              <br />
+              <input type="radio" name="kewarganegaraan" value="Perempuan" />
+              Perempuan
+            </div>
+          </div> -->
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label>E-mail</label>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Masukkan Email"
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>No HP :</label>
+              <input
+                type="text"
+                name="no_hp"
+                class="form-control"
+                placeholder="Masukkan No HP"
+              />
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="form-group">
+              <label>Program Studi :</label>
+              <input
+                type="text"
+                name="nama_ibu"
+                class="form-control"
+                placeholder="Masukkan Program Studi"
+              />
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="form-group">
+              <label>Semester :</label>
+              <input
+                type="text"
+                name="nama_ibu"
+                class="form-control"
+                placeholder="Masukkan Semester"
+              />
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="form-group">
+              <label>Alamat Domisili :</label>
+              <input
+                type="text"
+                name="nama_ibu"
+                class="form-control"
+                placeholder="Masukkan Alamat Domisili"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="alert alert-secondary">
+          <strong>
+            <input type="checkbox" name="pernyataan1" value="pernyataan1" />
+            Saya menyatakan bahwa data yang terisi di atas sudah benar.
+            <br />
+            <input type="checkbox" name="pernyataan2" value="pernyataan2" />
+            Belum yakin pada data yang sudah terisi.
+          </strong>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
